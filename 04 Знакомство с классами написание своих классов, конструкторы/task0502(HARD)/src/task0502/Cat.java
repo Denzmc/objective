@@ -26,10 +26,21 @@ public class Cat {
     }
 
     public boolean fight(Cat anotherCat) {
-        //напишите тут ваш код
+        if ((this.age+this.weight+this.strength)>(anotherCat.age+anotherCat.weight+anotherCat.strength))
+            return true;
+        return false;
     }
 
     public static void main(String[] args) {
+        Cat cat1 = new Cat();
+        cat1.weight = 1;
+        cat1.age = 1;
+        cat1.strength = 2;
+        Cat cat2 = new Cat();
+        cat2.age = 2;
+        cat2.weight = 1;
+        cat2.strength = 2;
 
+        System.out.println(cat2.fight(cat1));
     }
 }
