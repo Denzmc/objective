@@ -2,6 +2,10 @@ package task0532;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Scanner;
 
 /* 
 Задача по алгоритмам
@@ -22,10 +26,22 @@ Requirements:
 public class Solution {
     public static void main(String[] args) throws Exception {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        int maximum = ;
+        int maximum = 0;
+        String str;
+        int a =Character.getNumericValue(reader.read());
+        int[] arr = new int[a];
 
-        //напишите тут ваш код
+        Scanner scanner = new Scanner(System.in);
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = scanner.nextInt();
+        }
+
+
+
+        maximum = Arrays.stream(arr).max().getAsInt();
 
         System.out.println(maximum);
+        reader.close();
+        scanner.close();
     }
 }

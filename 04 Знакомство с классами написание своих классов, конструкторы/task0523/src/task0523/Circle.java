@@ -18,7 +18,7 @@ Requirements:
 */
 
 public class Circle {
-    public Color color;
+    private Color color;
 
     public static void main(String[] args) {
         Circle circle = new Circle();
@@ -26,14 +26,14 @@ public class Circle {
         System.out.println(circle.color.getDescription());
     }
 
-    public void Circle() {
+    public Circle() {
         color = new Color();
     }
 
     public class Color {
-        String description;
+        private String description;
 
-        public String getDescription() {
+        private String getDescription() {
             return description;
         }
 

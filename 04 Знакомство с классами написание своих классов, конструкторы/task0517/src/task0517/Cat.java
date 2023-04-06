@@ -28,7 +28,45 @@ Requirements:
 10. У класса должен быть конструктор, принимающий в качестве параметров вес, цвет, адрес и инициализирующий все переменные класса, кроме имени.*/
 
 public class Cat {
-    //напишите тут ваш код
+    private String name;
+    private int age;
+    private int weight;
+    private String address;
+    private String color;
+
+    public Cat(String name) {
+        this.name = name;
+        age = 2;
+        weight = 1;
+        color = "white";
+    }
+
+    public Cat(String name, int age, int weight) {
+        this.name = name;
+        this.age = age;
+        this.weight = weight;
+        color = "Black";
+    }
+
+    public Cat(String name, int age) {
+        this.name = name;
+        this.age = age;
+        weight = 3;
+        color = "Black";
+    }
+
+    public Cat(int weight, String color) {
+        this.weight = weight;
+        this.color = color;
+        age = 4;
+    }
+
+    public Cat(int weight, String address, String color) {
+        this.weight = weight;
+        this.address = address;
+        this.color = color;
+        age = 5;
+    }
 
     public static void main(String[] args) {
 

@@ -20,8 +20,45 @@ Requirements:
 
 public class Solution {
     public static void main(String[] args) {
-        //напишите тут ваш код
+        Man man1 = new Man("John", 35, "USSR");
+        Man man2 = new Man("Andy", 19, "RUS");
+        Woman w1 = new Woman("Sarah", 29, "USA");
+        Woman w2 = new Woman("Josephine", 31, "France");
+        System.out.println(man1);
+        System.out.println(man2);
+        System.out.println(w1);
+        System.out.println(w2);
     }
 
-    //напишите тут ваш код
+    public static class Man{
+        String name;
+        int age;
+        String address;
+
+        public Man(String name, int age, String address) {
+            this.name = name;
+            this.age = age;
+            this.address = address;
+        }
+
+        @Override
+        public String toString() {
+            return name + " " + age +" " + address;
+        }
+    }
+    public static class Woman{
+        private String name;
+        int age;
+        String address;
+
+        public Woman(String name, int age, String address) {
+            this.name = name;
+            this.age = age;
+            this.address = address;
+        }
+        @Override
+        public String toString() {
+            return name + " " + age +" " + address;
+        }
+    }
 }
