@@ -26,16 +26,16 @@ Requirements:
 public class Solution {
     public static void main(String[] args) throws Exception {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        int maximum = 0;
-        String str;
+        int maximum;
+
         int a =Character.getNumericValue(reader.read());
         int[] arr = new int[a];
 
         Scanner scanner = new Scanner(System.in);
+
         for (int i = 0; i < arr.length; i++) {
             arr[i] = scanner.nextInt();
         }
-
 
 
         maximum = Arrays.stream(arr).max().getAsInt();

@@ -2,6 +2,8 @@ package task0622;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.util.Arrays;
+import java.util.Scanner;
 
 /* 
 Числа по возрастанию
@@ -31,8 +33,12 @@ Requirements:
 
 public class Solution {
     public static void main(String[] args) throws Exception {
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-
-        //напишите тут ваш код
+//        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        int arr[] = new int[5];
+        Scanner sc = new Scanner(System.in);
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = sc.nextInt();
+        }
+        Arrays.stream(arr).sorted().forEach(System.out::println);
     }
 }

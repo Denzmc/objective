@@ -13,8 +13,12 @@ Requirements:
 5. Метод main должен создавать 50000 объектов типа Cat и 50000 объектов типа Dog.*/
 
 public class Solution {
-    public static void main(String[] args) {
-        // напишите тут ваш код
+    public static void main(String[] args) throws Throwable {
+        final int A = 50_000;
+        for (int i = 0; i < A; i++) {
+            Cat cat = new Cat();
+            new Dog();
+        }
     }
 }
 
